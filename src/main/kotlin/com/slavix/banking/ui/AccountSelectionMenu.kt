@@ -8,6 +8,13 @@ class AccountSelectionMenu {
     private var accountType: AccountType? = null
     fun displayMenu() {
         var userChoice = 0
+        var i = 1
+
+        for(accountType in AccountType.values()){
+            Console.println("$i. ${accountType.displayName}")
+            i++
+        }
+
 
         while(accountType == null){
             Console.println("Choose an option (1, 2, or 3)")
@@ -22,11 +29,13 @@ class AccountSelectionMenu {
                     2 -> AccountType.CreditAccount
                     3 -> AccountType.CheckingAccount
                     else -> {
+                        Console.println("The input is incorrect.")
                         continue
                     }
                 }
             }
             else{
+                Console.println("The input is incorrect.")
                 continue
             }
         }
