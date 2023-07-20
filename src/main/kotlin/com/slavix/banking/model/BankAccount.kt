@@ -1,4 +1,10 @@
 package com.slavix.banking.model
 
-class BankAccount{
+enum class AccountType {
+    CreditAccount,
+    DebitAccount,
+    CheckingAccount
+}
+
+abstract class BankAccount{
 }
