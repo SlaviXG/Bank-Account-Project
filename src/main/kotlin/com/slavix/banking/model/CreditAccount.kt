@@ -1,4 +1,4 @@
 package com.slavix.banking.model
 
-class CreditAccount {
+class CreditAccount : BankAccount (accountType = AccountType.CreditAccount){
 }

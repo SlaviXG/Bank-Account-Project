@@ -25,8 +25,8 @@ class AccountSelectionMenu {
                 Console.println("The selected option is: $userChoice")
 
                 accountType = when(userChoice){
-                    1 -> AccountType.DebitAccount
-                    2 -> AccountType.CreditAccount
+                    1 -> AccountType.CreditAccount
+                    2 -> AccountType.DebitAccount
                     3 -> AccountType.CheckingAccount
                     else -> {
                         Console.println("The input is incorrect.")

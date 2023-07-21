@@ -1,4 +1,4 @@
 package com.slavix.banking.model
 
-class CheckingAccount{
+class CheckingAccount : BankAccount (accountType = AccountType.CheckingAccount){
 }

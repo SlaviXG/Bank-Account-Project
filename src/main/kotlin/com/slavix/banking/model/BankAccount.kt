@@ -6,5 +6,9 @@ enum class AccountType(val displayName: String) {
     CheckingAccount("Checking account");
 }
 
-abstract class BankAccount{
+abstract class BankAccount(val accountType: AccountType) {
+    fun accountType(): AccountType {
+        return accountType
+    }
+
 }
