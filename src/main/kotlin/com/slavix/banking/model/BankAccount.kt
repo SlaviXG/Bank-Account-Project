@@ -1,10 +1,6 @@
 package com.slavix.banking.model
 
-enum class AccountType(val displayName: String) {
-    CreditAccount("Credit account"),
-    DebitAccount("Debit account"),
-    CheckingAccount("Checking account");
-}
+import com.slavix.banking.model.enums.AccountType
 
 abstract class BankAccount(val accountType: AccountType) {
     fun accountType(): AccountType {

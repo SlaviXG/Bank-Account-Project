@@ -1,6 +1,7 @@
 package com.slavix.banking.ui
 
 import com.slavix.banking.model.*
+import com.slavix.banking.model.enums.AccountType
 import com.slavix.banking.util.Console
 
 class AccountCreationMenu {

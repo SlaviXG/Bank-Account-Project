@@ -1,13 +1,13 @@
 package com.slavix.banking.ui
 
-import com.slavix.banking.model.AccountType
+import com.slavix.banking.model.enums.AccountType
 import com.slavix.banking.util.Console
 import com.slavix.banking.util.InputValidator
 
 class AccountSelectionMenu {
     private var accountType: AccountType? = null
     fun displayMenu() {
-        var userChoice = 0
+        var userChoice: Int = 0
         var i = 1
 
         for(accountType in AccountType.values()){
