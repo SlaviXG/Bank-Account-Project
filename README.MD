@@ -68,6 +68,10 @@ This project uses JUnit for unit testing. Follow these steps to run the tests:
 
 These unit tests help to ensure the robustness and reliability of the application by testing each function individually, allowing you to catch and resolve potential errors early in the development process.
 
+## License
+
+This project is licensed under the terms of the MIT license.
+
 ## Conclusion
 
 The Bank Account Project serves as a testament to my knowledge and skills in Kotlin programming. It reflects my ability to create functional and efficient code, handle user input, and build robust applications. I am proud of the skills I have developed and I am excited to apply them to future projects.
