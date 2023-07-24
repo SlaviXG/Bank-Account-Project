@@ -15,7 +15,9 @@ jobs:
           java-version: 1.8
       - name: Download Kotlin compiler
         run: curl -L https://github.com/JetBrains/kotlin/releases/download/v1.5.0/kotlin-compiler-1.5.0.zip -o kotlinc.zip && unzip kotlinc.zip
+      - name: Download JUnit standalone JAR
+        run: curl -L https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar -o junit-jupiter-api-5.7.0.jar
       - name: Build with Kotlin compiler
-        run: kotlinc/bin/kotlinc -include-runtime -d output.jar src/main/kotlin/
+        run: kotlinc/bin/kotlinc -cp junit-jupiter-api-5.7.0.jar -include-runtime -d output.jar src/main/kotlin/
       - name: Run tests
-        run: kotlinc/bin/kotlinc -script src/test/runTests.kts
+        run: kotlinc/bin/kotlinc -cp junit-jupiter-api-5.7.0.jar -script src/test/runTests.kts
