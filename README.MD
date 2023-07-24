@@ -37,6 +37,7 @@ Through this project, I have strengthened my understanding and proficiency in th
 - Demonstrating good coding practices and maintainability.
 - Complying with Kotlin functions, loops, conditional statements, when expressions.
 - Implementing and executing Unit Tests using JUnit to ensure robust application.
+- Working with GitHub Actions for continuous integration (CI).
 
 ## Getting Started
 
