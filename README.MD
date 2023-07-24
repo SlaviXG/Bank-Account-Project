@@ -1,7 +1,5 @@
 # Bank Account Project
 
-<!-- ![Bank Account Project](project_image.png) -->
-
 ## Project Overview
 
 Welcome to the Bank Account Project! This project is a demonstration of my coding abilities using Kotlin to create a bank account application. It showcases proficiency in Kotlin programming fundamentals and my ability to apply them effectively in a real-world scenario.
