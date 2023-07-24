@@ -7,4 +7,6 @@ fun main() {
     val accountCreationMenu = AccountCreationMenu()
     accountCreationMenu.displayMenu()
     val userAccount: BankAccount = accountCreationMenu.getUserAccount()
+    val accountOperationMenu = AccountOperationMenu(userAccount)
+    accountOperationMenu.displayMenu()
 }
