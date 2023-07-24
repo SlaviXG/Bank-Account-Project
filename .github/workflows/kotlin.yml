@@ -16,6 +16,6 @@ jobs:
       - name: Download Kotlin compiler
         run: curl -L https://github.com/JetBrains/kotlin/releases/download/v1.5.0/kotlin-compiler-1.5.0.zip -o kotlinc.zip && unzip kotlinc.zip
       - name: Build with Kotlin compiler
-        run: kotlinc/bin/kotlinc src/main/kotlin/com/slavix/banking/ui/Main.kt -include-runtime -d output.jar
+        run: kotlinc/bin/kotlinc -include-runtime -d output.jar src/main/kotlin/
       - name: Run tests
         run: kotlinc/bin/kotlinc -script test.kts
