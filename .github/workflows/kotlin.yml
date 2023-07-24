@@ -13,7 +13,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: Build with Gradle
-        run: ./gradlew build
-      - name: Test with Gradle
-        run: ./gradlew test
+      - name: Build with Maven
+        run: mvn install
+      - name: Test with Maven
+        run: mvn test
