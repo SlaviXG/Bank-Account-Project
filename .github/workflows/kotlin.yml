@@ -18,4 +18,4 @@ jobs:
       - name: Build with Kotlin compiler
         run: kotlinc/bin/kotlinc -include-runtime -d output.jar src/main/kotlin/
       - name: Run tests
-        run: kotlinc/bin/kotlinc -script test.kts
+        run: kotlinc/bin/kotlinc -script src/test/runTests.kts
