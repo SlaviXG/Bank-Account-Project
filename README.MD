@@ -23,7 +23,7 @@ In this part, I have developed an intuitive user interface that enables users to
 
 ### Part 2: Define Bank Account Operations
 
-For each account type, I have implemented the necessary logic to handle deposit and withdrawal operations. By utilizing functions and conditional statements, I ensure that the operations are performed accurately based on the specific account type.
+For each account type (Checking, Debit and Credit), I have implemented the necessary logic to handle deposit and withdrawal operations. By utilizing functions and conditional statements, I ensure that the operations are performed accurately based on the specific account type.
 
 ### Part 3: Manage the Bank Account
 
@@ -38,10 +38,35 @@ Through this project, I have strengthened my understanding and proficiency in th
 - Implementing user input validation for enhanced reliability.
 - Demonstrating good coding practices and maintainability.
 - Complying with Kotlin functions, loops, conditional statements, when expressions.
+- Implementing and executing Unit Tests using JUnit to ensure robust application.
 
 ## Getting Started
 
-To run the Bank Account Project, please make sure that Kotlin is installed on your device, then clone the repository, select Bank-Account-Project as a project folder in the IDE and make the Main.kt file to be a starting point to the application. Then run the application.
+To run the Bank Account Project, please follow these steps:
+
+1. Ensure that Kotlin is installed on your device. If not, you can download and install it from the [official Kotlin website](https://kotlinlang.org/).
+
+2. Clone the repository to your local machine.
+
+3. Open your preferred IDE (such as IntelliJ IDEA), and select 'Bank-Account-Project' as a project folder.
+
+4. Set the 'Main.kt' file as the starting point of the application.
+
+5. To run the application, execute the 'Main.kt' file.
+
+### Running Unit Tests
+
+This project uses JUnit for unit testing. Follow these steps to run the tests:
+
+1. In your IDE, find the 'test' directory in the project structure.
+
+2. Inside the 'test' directory, you'll find multiple .kt files with unit tests for the different components of the application.
+
+3. To run all the tests simultaneously, right-click on the 'test' directory and select 'Run Tests' (or equivalent, depending on your IDE).
+
+4. To run a specific test, open the respective .kt file, right-click on the test function and select 'Run Test' (or equivalent).
+
+These unit tests help to ensure the robustness and reliability of the application by testing each function individually, allowing you to catch and resolve potential errors early in the development process.
 
 ## Conclusion
 
