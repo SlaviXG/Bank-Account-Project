@@ -6,19 +6,21 @@ import com.slavix.banking.model.enums.AccountType
 class DebitAccount : BankAccount (accountType = AccountType.DebitAccount) {
     override fun withdraw(amount: Long): Long {
         return if (accountBalance == 0L) {
-            lastOperationState(AccountLastOperationState.FailureNullBalance)
+            lastOperationState(AccountLastOperationState.WithdrawalFailureNullBalance)
             0L
         } else if (amount > accountBalance) {
-            lastOperationState(AccountLastOperationState.FailureNotEnoughBalance)
+            lastOperationState(AccountLastOperationState.WithdrawalFailureNotEnoughBalance)
             0L
         } else {
-            lastOperationState(AccountLastOperationState.SuccessfulWithdrawal)
+            lastOperationState(AccountLastOperationState.WithdrawalSuccessful)
             accountBalance -= amount
             amount
         }
     }
 
     override fun deposit(amount: Long): Long {
-        TODO("Not yet implemented")
+        accountBalance += amount
+        lastOperationState(AccountLastOperationState.DepositSuccessful)
+        return amount
     }
 }

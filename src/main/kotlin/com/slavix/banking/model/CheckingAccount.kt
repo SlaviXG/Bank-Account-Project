@@ -6,11 +6,13 @@ import com.slavix.banking.model.enums.AccountType
 class CheckingAccount : BankAccount (accountType = AccountType.CheckingAccount){
     override fun withdraw(amount: Long): Long {
         accountBalance -= amount
-        lastOperationState(AccountLastOperationState.SuccessfulWithdrawal)
+        lastOperationState(AccountLastOperationState.WithdrawalSuccessful)
         return amount
     }
 
     override fun deposit(amount: Long): Long {
-        TODO("Not yet implemented")
+        accountBalance += amount
+        lastOperationState(AccountLastOperationState.DepositSuccessful)
+        return amount
     }
 }
